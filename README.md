@@ -21,7 +21,7 @@ Or you can just grab the css file in the `./dist` folder.
 
 You can also get `textretty.css` with jsDelivr CDN, this method does not need to install.
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.com/gh/BigCoke233/textretty.css/dist/textretty.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/BigCoke233/textretty.css/dist/textretty.min.css">
 ```
 
 ## Usage
