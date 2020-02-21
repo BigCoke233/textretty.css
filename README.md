@@ -1,9 +1,7 @@
 <p align="center">
   <img src="banner.jpg">
-  
-# Textretty
-
-A simple typography stylesheet
+  <h1 align="center">Textretty</h1>
+  <p align="center">A simple typography stylesheet</p>
   
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) 
 [![MIT License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](./LICENSE) 
