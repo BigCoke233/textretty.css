@@ -10,6 +10,7 @@
 ## Introduction
 
 **Textretty** is a simple typography stylesheet which can be used on any html-based document. It's usually for article content but not the whole website. It can help you start writing quickly and you don't need to care about the style too much.
+And it has referenced to GitHub Markdown style.
 
 ## Installation
 
