@@ -3,8 +3,8 @@
   
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) 
 [![MIT License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](./LICENSE) 
-![Star Number](https://img.shields.io/github/stars/BigCoke233/textretty?label=Star&style=flat-square)
-[![downloads](https://img.shields.io/github/downloads/BigCoke233/textretty/total?style=flat-square)](https://github.com/BigCoke233/textretty/releases)
+![Star Number](https://img.shields.io/github/stars/BigCoke233/textretty.css?label=Star&style=flat-square)
+[![downloads](https://img.shields.io/github/downloads/BigCoke233/textretty.css/total?style=flat-square)](https://github.com/BigCoke233/textretty/releases)
   
 </p>
 
