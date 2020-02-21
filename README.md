@@ -1,6 +1,10 @@
 <p align="center">
   <img src="banner.jpg">
   
+# Textretty
+
+A simple typography stylesheet
+  
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) 
 [![MIT License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](./LICENSE) 
 ![Star Number](https://img.shields.io/github/stars/BigCoke233/textretty.css?label=Star&style=flat-square)
