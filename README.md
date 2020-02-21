@@ -12,9 +12,9 @@ And it has referenced to GitHub Markdown style.
 
 ## Installation
 
-Clone the lastest `textretty.css` with git.
+Install `textretty` with npm.
 ```git
-$ git clone https://github.com/BigCoke233/textretty.css.git
+$ npm install textretty
 ```
 Or you can just grab the css file in the `./dist` folder.
 
