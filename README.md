@@ -18,7 +18,7 @@ $ npm install textretty
 ```
 Or you can just grab the css file in the `./dist` folder.
 
-You can also get `textretty.css` with jsDelivr CDN, this method does not need to install.
+You can also get `textretty.css` with jsDelivr CDN, this method does not require to install.
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/BigCoke233/textretty.css/dist/textretty.min.css">
 ```
@@ -43,7 +43,7 @@ You can also get `textretty.css` with jsDelivr CDN, this method does not need to
 
 ## Standard
 
-**Textretty** has its own standard for elements. This following table shows every defined html tag and its standard usage. You'd better follow them.
+**Textretty** has its own standard for elements. This following table shows every defined html tag and its standard usage. You are supposed to follow them.
 
 | Tag Name       | Descripiton |
 | -------------- | ----------- |
