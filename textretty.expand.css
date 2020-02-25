@@ -9,11 +9,15 @@
  
 /* Padding & Margin */
 .tex-panel-title,
-.tex-panel:hover .tex-panel-content,
+.tex-panel:not(.tex-panel-open):hover .tex-panel-content,
 .tex-alert,
 .tex-alert-serious {
 	padding: 20px;
 	margin: 8px 0;
+}
+
+.tex-panel {
+	margin-bottom: 12px
 }
  
 /* Panel */
@@ -21,7 +25,8 @@
 	border: 1px solid #ddd;
 	border-radius: 3px;
 	padding: 0;
-	overflow: hidden
+	overflow: hidden;
+	background: #fff
 }
 
 .tex-panel-title {
@@ -30,7 +35,7 @@
 	vertical-align: middle
 }
 
-.tex-panel-title:after {
+.tex-panel:not(.tex-panel-open) .tex-panel-title:after {
 	content: 'OPEN';
 	color: gray;
 	font-size: 10px;
@@ -38,20 +43,25 @@
 	margin-left: 10px;
 }
 
-.tex-panel-content {
+.tex-panel:not(.tex-panel-open) .tex-panel-content {
 	opacity: 0;
 	height: 0!important;
 	transition: .2s;
 }
 
-.tex-panel:hover .tex-panel-content {
+.tex-panel:not(.tex-panel-open):hover .tex-panel-content {
 	height: auto!important;
 	opacity: 1;
 }
 
+.tex-panel-open .tex-panel-content {
+	padding: 20px
+}
+
 /* Alert */
 .tex-alert {
-	color: #DD4B39
+	color: #DD4B39;
+	background: #fff
 }
 .tex-alert,
 .tex-alert-serious {
