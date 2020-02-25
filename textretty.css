@@ -7,7 +7,9 @@
  *  @repo:    https://github.com/BigCoke233/textretty.css
  */
 
-/* Container */
+/* 
+ * Container 
+ */
 .textretty {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -23,6 +25,10 @@
   box-sizing: border-box;
 }
 
+/*
+ * Content
+ */
+ 
 /* Anchor Links */
 .textretty a {
   background-color: transparent;
@@ -33,12 +39,11 @@
 }
 
 .textretty a:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
-.textretty a:active,
-.textretty a:hover {
-  outline-width: 0;
+.textretty a:active {
+  opacity: 0.7
 }
 
 /* Emphasize */
@@ -356,4 +361,24 @@ border-bottom: 1px solid #eaecef;
 .textretty ul {
   margin-bottom: 16px;
   margin-top: 0;
+}
+
+/* 
+ * Custom 
+ */
+ 
+/* Paragraph Indent */
+p.tex-para-indent,
+.tex-para-indent p {
+	text-indent: 1.1em
+}
+
+p.tex-para-indent-full,
+.tex-para-indent-full p {
+	text-indent: 2em
+}
+
+/* Remove title underline */
+.tex-title-no-line {
+	/* Defined in line 83, 84 */
 }
