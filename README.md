@@ -86,8 +86,8 @@ These tags above are all defined in `textretty.css`.
     <h3>Make sure it's wide enough first</h3>
 	<!-- content -->
 	
-	<h3>Push heavily!</h3>
-	<!-- content -->
+    <h3>Push heavily!</h3>
+    <!-- content -->
 
   <h2>Push it in</h2>
   <!-- content -->
