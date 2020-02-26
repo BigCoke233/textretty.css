@@ -120,4 +120,4 @@ But attention, `<strong>` and `<em>` mean the text is really important and you'r
 
 ---
 
-Copyright &copy; 2020 Eltrac Koalar, All rights reserved.
+Copyright &copy; 2020 Eltrac Koalar, released under MIT License.
