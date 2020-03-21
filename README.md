@@ -1,7 +1,7 @@
 <p align="center">
   <img src="banner.jpg">
   <h1 align="center">Textretty</h1>
-  <p align="center">A simple typography stylesheet for article content.</p>
+  <p align="center">A simple typography stylesheet used on HTML page.</p>
   <p align="center"><a href="http://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square"></a> <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-green?style=flat-square"></a> <img src="https://img.shields.io/github/stars/BigCoke233/textretty.css?label=Star&style=flat-square"> <a href="https://github.com/BigCoke233/textretty/releases"><img src="https://img.shields.io/github/downloads/BigCoke233/textretty.css/total?style=flat-square"></a></p>
 </p>
 
