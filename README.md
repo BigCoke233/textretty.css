@@ -116,7 +116,7 @@ The text in line 2.</p>
 You can emphasize some important parts of a paragraph with bold and italic styles. `<strong>` and `<b>` are used for bold text while `<em>` and `<i>` are uesd for italic text. 
 But attention, `<strong>` and `<em>` mean the text is really important and you're emphasizing it. `<b>` and `<i>` just make the text bold or italic and don't has certain meaings.
 
-> Please turn to [this page](https://bigcoke233.github.io/textretty,css) for more information.
+> Please turn to [this page](https://bigcoke233.github.io/textretty.css) for more information.
 
 ---
 
