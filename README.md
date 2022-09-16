@@ -7,117 +7,67 @@
 
 ## Introduction
 
-**Textretty** is a simple typography stylesheet which can be used on any html-based document. It's usually for article content but not the whole website. It can help you start writing quickly and you don't need to care about the style too much.
-And it has referenced to GitHub Markdown style.
+Textretty is a tiny typography css library. It can be used wherever any readable content is, such as your blog post and a document.
 
-## Installation
+Additionally, textretty provide you with some simple class to construct a page container, which helps you create a single document page (just like the one you are reading) with no extra css.
 
-Install `textretty` with npm.
+## Get Started
+
+Get the lastest version with git.
+
 ```git
-$ npm install textretty
+$ git clone https://github.com/BigCoke233/textretty.css.git
 ```
-Or you can just grab the css file in the `./dist` folder.
 
-You can also get `textretty.css` with jsDelivr CDN, this method does not require to install.
+Or you can just grab the `textretty.min.css` file in the main branch.
+
+You can also get `textretty.min.css` with jsDelivr CDN, this method does not require to install.
+
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/BigCoke233/textretty.css/dist/textretty.min.css">
 ```
 
+> 说明：jsDelivr 在中国大陆地区无法访问
+
 ## Usage
 
-**Textretty** only works in the element with `.textretty` class.
+Textretty only works in the element with textretty class.
+
 ```html
 <head>
-  <!-- ...... -->
-  <link rel="stylesheet" href="textretty.css">
-  <!-- ...... -->
+    <!-- ...... -->
+    <link rel="stylesheet" href="textretty.css">
+    <!-- ...... -->
 </head>
 <body>
-  <!-- ...... -->
-  <article class="textretty">
-    <!-- your content here -->
-  </article>
-  <!-- ...... -->
+    <!-- ...... -->
+    <article class="textretty">
+      <!-- your content goes here -->
+    </article>
+    <!-- ...... -->
 </body>
 ```
 
-## Standard
-
-**Textretty** has its own standard for elements. This following table shows every defined html tag and its standard usage. You are supposed to follow them.
-
-| Tag Name       | Descripiton |
-| -------------- | ----------- |
-| **h1-h6**      | Graded headings used as titles |
-| **p**          | Paragraph   |
-| **strong**, b  | Text in bold |
-| **em**, i      | Text in italic |
-| **del**, s     | Deleted text |
-| **a**          | Anchor link |
-| **img**        | Image       |
-| **pre**        | Code block  |
-| **code**       | Inline code |
-| **kbd**        | Text on keyboards |
-| **ol**         | Ordered list |
-| **ul**         | Unordered list |
-| **li**         | List item   |
-| **table**      | Just table  |
-| **tr**         | Rows of table |
-| **th**         | Headings of table |
-| **td**         | Cells of table |
-| **thead**      | The header of a table |
-| **tbody**      | The body content of a table |
-| **tfoot**      | The footer of a table |
-| **blockquote** | Quotions (block displayed) |
-| **hr**         | Divider / Separator |
-| **header**     | The header of an article/document |
-| **footer**     | The footer of an article/document |
-
-These tags above are all defined in `textretty.css`. 
-
-### Headings
-
-`<h1>`~`<h6>` are all headings. Usually, `<h1>` are used as the main title of the whole article / document. Others're used as subtitles while `<h2>` and `<h3>` are the most widely used. Here's an example:
-```html
-<h1>How to put an elephent into a fridge?</h1>
-<!-- content -->
-
-  <h2>Open the door</h2>
-  <!-- content -->
-    <h3>Make sure it's wide enough first</h3>
-	<!-- content -->
-	
-    <h3>Push heavily!</h3>
-    <!-- content -->
-
-  <h2>Push it in</h2>
-  <!-- content -->
-
-  <h2>Close the door</h2>
-  <!-- content -->
-```
-
-> The space before the `<h2>` and `<h3>` is there to help you understand their relation but they don't really exist.
-
-Every `<h1>` and `<h2>` is underlined with a thick light-gray line just like GitHub. If you don't like it, you can add `.tex-title-no-line` class to `.textretty` container.
-
-### Paragraph
-
-Paragraph is defined with `<p>`. Every `<p>` tag is a paragrph. But remember two lines in one `<p>` tag is not two paragraph.
+To build a single document page as mentioned, you need `textretty-container`.
 
 ```html
-<!-- I'm a paragraph -->
-<p>The text in a paragraph.<p>
-
-<!-- I'm just a paragraph but not two -->
-<p>The text in line 1.<br>
-The text in line 2.</p>
+<main class="textretty textretty-container">
+  <header>
+    <h1>Document Title</h1>
+    <p>Information like publish date and category.</p>
+  </header>
+  <article>
+    <!-- your content goes here -->
+  </article>
+  <footer>
+    <p>Copyright &copy; 2022 Textretty</p>
+  </footer>
+</main>
 ```
 
-You can emphasize some important parts of a paragraph with bold and italic styles. `<strong>` and `<b>` are used for bold text while `<em>` and `<i>` are uesd for italic text. 
-But attention, `<strong>` and `<em>` mean the text is really important and you're emphasizing it. `<b>` and `<i>` just make the text bold or italic and don't has certain meaings.
+If you find the container being too wide or slim, replace `textretty-container` with the ones below.
 
-> Please turn to [this page](https://bigcoke233.github.io/textretty.css) for more information.
+- textretty-container-slim: a slimmer page 700px wide at most.
+- textretty-container-wide: a wider page 100px wide at most.
 
----
-
-Copyright &copy; 2020 Eltrac Koalar, released under MIT License.
+It is notable that all the containers have their `padding` defined as `2em`.
