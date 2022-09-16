@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="theme-color" content="#ffffff">
+    <title>Textretty.css</title>
+	  <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="../textretty.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="textretty textretty-container-slim">
+	  <header>
+	    <h1>Textretty</h1>
+ 	    <p>A simple typography stylesheet for readable content.</p>
+ 	    <p class="inline-image"><a href="http://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square"></a> <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-green?style=flat-square"></a> <img src="https://img.shields.io/github/stars/BigCoke233/textretty.css?label=Star&style=flat-square"> <a href="https://github.com/BigCoke233/textretty/releases"><img src="https://img.shields.io/github/downloads/BigCoke233/textretty.css/total?style=flat-square"></a></p>
+	  </header>
+<section>
+  <h2>Introduction</h2>
+  <p>Textretty is a tiny typography css library. It can be used wherever any readable content is, such as your blog post and a document. </p>
+  <p>Additionally, textretty provide you with some simple <code>class</code> to construct a page container, which helps you create a single document page (just like the one you are reading) with no extra css.</p>
+  <h2>Get Started</h2>
+  <p>Get the lastest version with git.</p>
+  <pre><code class='language-git' lang='git'>$ git clone https://github.com/BigCoke233/textretty.css.git</code></pre>
+  <p>Or you can just grab the <code>textretty.min.css</code> file in the <code>main</code> branch.</p>
+  <p>You can also get <code>textretty.css</code> with jsDelivr CDN, this method does not require to install.</p>
+  <pre><code class='language-html' lang='html'>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/BigCoke233/textretty.css/dist/textretty.min.css&quot;&gt;</code></pre>
+  <blockquote><p>说明：jsDelivr 在中国大陆地区无法访问</p>
+  </blockquote>
+  <h2>Usage</h2>
+  <p><strong>Textretty</strong> only works in the element with <code>textretty</code> class.</p>
+  <pre><code class='language-html' lang='html'>&lt;head&gt;
+    &lt;!-- ...... --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;textretty.css&quot;&gt;
+    &lt;!-- ...... --&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- ...... --&gt;
+    &lt;article class=&quot;textretty&quot;&gt;
+      &lt;!-- your content goes here --&gt;
+    &lt;/article&gt;
+    &lt;!-- ...... --&gt;
+  &lt;/body&gt;</code></pre>
+  <p>To build a single document page as mentioned, you need <code>textretty-container</code>.</p>
+  <pre><code class='language-html' lang='html'>&lt;main class=&quot;textretty textretty-container&quot;&gt;
+    &lt;header&gt;
+      &lt;h1&gt;Document Title&lt;/h1&gt;
+      &lt;p&gt;Information like publish date and category.&lt;/p&gt;
+    &lt;/header&gt;
+    &lt;article&gt;
+      &lt;!-- your content goes here --&gt;
+    &lt;/article&gt;
+    &lt;footer&gt;
+      &lt;p&gt;Copyright &amp;copy; 2022 Textretty&lt;/p&gt;
+    &lt;/footer&gt;
+  &lt;/main&gt;</code></pre>
+  <p>If you find the container being too wide or slim, replace <code>textretty-container</code> with the ones below.</p>
+  <ul>
+  <li><code>textretty-container-slim</code>: a slimmer page <code>700px</code> wide at most.</li>
+  <li><code>textretty-container-wide</code>: a wider page <code>100px</code> wide at most.</li>
+  
+  </ul>
+  <p>It is notable that all the containers have their <code>padding</code> defined as <code>2em</code>.</p>
+  <h2>Standard</h2>
+  <p>This following table shows every defined html tag that textretty supports and its standard usage. You are supposed to follow them.</p>
+  <figure><table>
+  <thead>
+  <tr><th>Tag Name</th><th>Descripiton</th></tr></thead>
+  <tbody><tr><td><strong>h1-h6</strong></td><td>Headings</td></tr><tr><td><strong>p</strong></td><td>Paragraph</td></tr><tr><td><strong>strong</strong>, b</td><td>Text in bold</td></tr><tr><td><strong>em</strong>, i</td><td>Text in italic</td></tr><tr><td><strong>del</strong>, s</td><td>Deleted text</td></tr><tr><td><strong>a</strong></td><td>Anchor link</td></tr><tr><td><strong>img</strong></td><td>Image</td></tr><tr><td><strong>pre</strong></td><td>Code block (should be used with <code>code</code> in it)</td></tr><tr><td><strong>code</strong></td><td>Inline code</td></tr><tr><td><strong>kbd</strong></td><td>Text on keyboards</td></tr><tr><td><strong>ol</strong></td><td>Ordered list</td></tr><tr><td><strong>ul</strong></td><td>Unordered list</td></tr><tr><td><strong>li</strong></td><td>List item</td></tr><tr><td><strong>table</strong></td><td>Just table</td></tr><tr><td><strong>tr</strong></td><td>Rows of table</td></tr><tr><td><strong>th</strong></td><td>Headings of table</td></tr><tr><td><strong>td</strong></td><td>Cells of table</td></tr><tr><td><strong>thead</strong></td><td>The header of a table</td></tr><tr><td><strong>tbody</strong></td><td>The body content of a table</td></tr><tr><td><strong>tfoot</strong></td><td>The footer of a table</td></tr><tr><td><strong>blockquote</strong></td><td>Quotions (block displayed)</td></tr><tr><td><strong>hr</strong></td><td>Divider / Separator</td></tr><tr><td><strong>header</strong></td><td>The header of an article/document</td></tr><tr><td><strong>footer</strong></td><td>The footer of an article/document</td></tr></tbody>
+  </table></figure>
+  <h3>Paragraph</h3>
+  <p>Paragraph is defined by <code>&lt;p&gt;</code>. Every <code>&lt;p&gt;</code> tag is a paragraph. But remember two lines in one <code>&lt;p&gt;</code> tag is not two paragraph but just to sentences.</p>
+  <pre><code class='language-html' lang='html'>&lt;!-- I&#39;m a paragraph --&gt;
+  &lt;p&gt;The text in a paragraph.&lt;p&gt;
+  
+  &lt;!-- I&#39;m just a paragraph but not two --&gt;
+  &lt;p&gt;The text in line 1.&lt;br&gt;
+  The text in line 2.&lt;/p&gt;</code></pre>
+  <p>You can emphasize some important parts of a paragraph with bold and italic styles. <code>&lt;strong&gt;</code> and <code>&lt;b&gt;</code> are used for bold text while <code>&lt;em&gt;</code> and <code>&lt;i&gt;</code> are used for italic text. </p>
+  <p>However, <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code> mean the text is really important and you&#39;re emphasizing it. <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code> just make the text bold or italic and don&#39;t has certain meanings.</p>
+  <h3>list</h3>
+  <p>Ordered list is constructed with <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code> is the list items.</p>
+  <ol>
+  <li><p>I&#39;m a item of the ordered list.</p>
+  </li>
+  <li><p>I&#39;m a item of the ordered list.</p>
+  </li>
+  <li><p>I&#39;m a item of the ordered list.</p>
+  <ol>
+  <li>I&#39;m a item of another ordered list inside the ordered list.</li>
+  <li>I&#39;m a item of another ordered list inside the ordered list.</li>
+  
+  </ol>
+  </li>
+  <li><p>I&#39;m a item of the ordered list.</p>
+  </li>
+  <li><p>I&#39;m a item of the ordered list.</p>
+  </li>
+  
+  </ol>
+  <p>Unordered list is constructed with <code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code> is the list items.</p>
+  <ul>
+  <li><p>I&#39;m a item of the unordered list.</p>
+  </li>
+  <li><p>I&#39;m a item of the unordered list.</p>
+  </li>
+  <li><p>I&#39;m a item of the unordered list.</p>
+  <ul>
+  <li>I&#39;m a item of another unordered list inside the unordered list.</li>
+  <li>I&#39;m a item of another unordered list inside the unordered list.</li>
+  
+  </ul>
+  </li>
+  <li><p>I&#39;m a item of the unordered list.</p>
+  </li>
+  <li><p>I&#39;m a item of the unordered list.</p>
+  </li>
+  
+  </ul>
+  <h3>Table</h3>
+  <p>Here&#39;s the best method to construct a table.</p>
+  <pre><code>&lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Table Heading&lt;/th&gt;
+        &lt;th&gt;Table Heading&lt;/th&gt;
+        &lt;th&gt;Table Heading&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Table Cell&lt;/td&gt;
+        &lt;td&gt;Table Cell&lt;/td&gt;
+        &lt;td&gt;Table Cell&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Table Cell&lt;/td&gt;
+        &lt;td&gt;Table Cell&lt;/td&gt;
+        &lt;td&gt;Table Cell&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Table Cell&lt;/td&gt;
+        &lt;td&gt;Table Cell&lt;/td&gt;
+        &lt;td&gt;Table Cell&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;</code></pre>
+  <h3>Image</h3>
+  <p>Ususally, every <code>&lt;img&gt;</code> should be put into a <code>&lt;p&gt;</code> tag.</p><pre><code>&lt;p&gt;&lt;img src=&quot;example.png&quot;&gt;&lt;/p&gt;
+  </code></pre>
+  <p><img src="https://cdn.jsdelivr.net/gh/BigCoke233/image-hosting/large-pic/weathering-with-you.jpg" referrerpolicy="no-referrer" alt="img"></p>
+  <p>Or, put it in a <code>&lt;figure&gt;</code> tag so that you can add a caption to it.</p>
+  <pre><code>&lt;figure&gt;
+    &lt;img src=&quot;example.png&quot; /&gt;
+    &lt;figcaption&gt;I&#39;m a caption&lt;/figcaption&gt;
+  &lt;/figure&gt;</code></pre>
+  <figure>
+    <img src="https://cdn.jsdelivr.net/gh/BigCoke233/image-hosting/large-pic/weathering-with-you.jpg" referrerpolicy="no-referrer" alt="img">
+    <figcaption>From the movie <em>Weathering With You.</em></figcaption>
+  </figure>
+  <h3>Blockquote</h3>
+  <p>When quoting some passages from others, you should put the quoted text into a <code>&lt;blockquote&gt;</code>.</p>
+  <pre><code>&lt;blockquote&gt;
+    &lt;p&gt;I&#39;m the quotation.&lt;/p&gt;
+  &lt;/blockquote&gt;</code></pre>
+  <p>It will be like this:</p>
+  <blockquote><p>If it requires a uniform, it&#39;s a worthless endeavor.</p>
+  </blockquote>
+  
+</section>
+<footer><p>Copyright &copy; 2020 Eltrac Koalar, All rights reserved.</p></footer>
+</main>
+  </body>
+</html>
